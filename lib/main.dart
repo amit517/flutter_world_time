@@ -5,12 +5,11 @@ import 'package:flutter_world_time/pages/loading.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/home',
+    initialRoute: '/',
     routes: {
-  '/' : (context) => Loading(),
-  '/home': (context) => Home(),
-  '/location' : (context) => ChooseLocation(),
-
-  },
+      '/': (context) => Loading(),
+      '/home': (context) => Home(),
+      '/location': (context) => ChooseLocation(),
+    },
   ));
 }
